@@ -102,7 +102,7 @@ addRouter.post("", async (req, res) => {
 
     res
       .status(201)
-      .send({ data: { carryArray: carryArray, addArray: addArray } });
+      .send({ carryArray: carryArray, addArray: addArray  });
   } catch (err) {
     res.status(500).send({ message: "error there" });
   }
