@@ -28,7 +28,7 @@ export const Home = () => {
           <h1>Step Addition</h1>
         </div>
       </div>
-      
+
       <div className="inputTakingDiv">
         <div className="labelDivOne">First Number:</div>
         <input
@@ -50,7 +50,7 @@ export const Home = () => {
         />
       </div>
       <div className="genrateButtonDiv" onClick={handleAdd}>
-        <button onClick={handleAdd}>Genrate Steps</button>
+        <button onClick={handleAdd}>Generate Steps</button>
       </div>
       {/* conditional rendering so that if there is no data it should not show any error and dont display the steps */}
       {carrData ? <StepPage /> : ""}

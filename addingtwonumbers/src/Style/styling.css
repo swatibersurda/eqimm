@@ -59,7 +59,7 @@ input {
   border: none;
 }
 .genrateButtonDiv {
-  width: 328px;
+  width: 334px;
   height: 76px;
   margin-top: 20px;
   margin-left: 915px;
@@ -69,7 +69,7 @@ input {
 button {
   margin-top: 10px;
   height: 48px;
-  width: 236px;
+  width: 300px;
   border-radius: none;
   font-family: Inter;
   font-size: 32px;
