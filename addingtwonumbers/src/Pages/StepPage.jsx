@@ -4,20 +4,21 @@ export const StepPage = () => {
   // extracting the data we got from api carryArray and addData.
   const carrData = useSelector((state) => state.data.carryArray);
   const addData = useSelector((state) => state.data.addArray);
-  //   console.log(carrData, "reached",addData,"dd");
+  
   return (
     <div className="stepContainer">
       <div className="steps">
-     <h3 className="yellowColor leftAlign">
-        {"{"}
-        </h3> 
+        <h3 className="yellowColor leftAlign">{"{"}</h3>
         {carrData &&
           addData.map((item, index) => {
             return (
-                // here making index as key because not geting it rom backend so index will became here key or unique key.
+              // here making index as key because not geting it from backend so index will became here key or unique key.
               <div key={index} className="innerStepsDiv">
                 <div className="contentDiv">
-                  <h3 className="blueColor">{`"`}step{index + 1}{`"`}</h3>
+                  <h3 className="blueColor">
+                    {`"`}step{index + 1}
+                    {`"`}
+                  </h3>
                   <h3 className="yellowColor">{":"}</h3>
                   {/* <h3>{`{`}"carryString":{carrData[index]}{`,`}"sumString":{addData[index]}{`}`}</h3> */}
                   <h3 className="yellowColor">{`{`}"carryString":</h3>
@@ -39,9 +40,8 @@ export const StepPage = () => {
               </div>
             );
           })}
-          {/* for last curly braces */}
-        <h3 className="yellowColor leftAlign">
-            {"}"}</h3>
+        {/* for last curly braces */}
+        <h3 className="yellowColor leftAlign">{"}"}</h3>
       </div>
     </div>
   );
