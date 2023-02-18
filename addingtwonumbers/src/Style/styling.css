@@ -21,8 +21,11 @@
   left: -1385px;
 }
 .inputTakingDiv {
-  display: block;
-  border: 1px solid green;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid transparent;
 }
 .labelDivOne {
   width: 206px;
@@ -32,7 +35,8 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 38.73px;
-  border: 1px solid red;
+  border: 1px solid transparent;
+  min-width: 250px;
 }
 .labelDivTwo {
   width: 254px;
@@ -41,6 +45,8 @@
   left: -1274px;
   font-size: 32px;
   line-height: 38.73px;
+  border: 1px solid transparent;
+  min-width: 250px;
 }
 input {
   width: 697px;
@@ -56,15 +62,14 @@ input {
   width: 328px;
   height: 76px;
   margin-top: 20px;
-  margin-left: 700px;
+  margin-left: 915px;
   border-radius: 10px;
   border: 1px solid #a8a8a8;
 }
 button {
+  margin-top: 10px;
   height: 48px;
   width: 236px;
-  left: -585px;
-  top: -920px;
   border-radius: none;
   font-family: Inter;
   font-size: 32px;
@@ -83,13 +88,11 @@ button {
   top: -808px;
   border-radius: 0px;
   width: 979px;
-  height: 600px;
+  height: 540px;
   margin: auto;
   background: #e9e9e9;
-  border:1px solid transparent;
+  border: 1px solid transparent;
   margin-top: 2%;
- 
-  
 }
 .steps {
   height: 505px;
@@ -99,8 +102,6 @@ button {
   border-radius: 0px;
   background: #232d3e;
   margin: auto;
-  
- 
 }
 .contentDiv {
   display: flex;
@@ -115,6 +116,6 @@ button {
 .blueColor {
   color: blue;
 }
-.leftAlign{
-    margin-left: -900px;
+.leftAlign {
+  margin-left: -900px;
 }
